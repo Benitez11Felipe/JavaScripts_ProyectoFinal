@@ -1,52 +1,65 @@
+function suma (num1, num2){
+    let resultadoSuma = num1 + num2;
+    alert(num1+" + "+num2+" = "+resultadoSuma);
+}
+
+function resta (num1, num2){
+    let resultadoResta = num1 - num2;
+    alert(num1+" - "+num2+" = "+resultadoResta);
+}
+
+function multiplicacion (num1, num2){
+    let resultadoMultiplicacion = num1 * num2;
+    alert(num1+" x "+num2+" = "+resultadoMultiplicacion);
+}
+
+function division (num1, num2){
+    let resultadoDivision = num1 / num2;
+    alert(num1+" / "+num2+" = "+resultadoDivision);
+}
+
 let nombre= prompt("Ingresá tu nombre");
 let apellido= prompt("Ingresá tu apellido");{
     alert("Bienvenído a Calculadora General "+nombre+" "+apellido+"!!!");
 }
 
-let problema = prompt("Ingrese el problema matematico que desea resolver. Por ejemplo: Multiplicacion");
+let problema = prompt("Ingrese el problema matematico que desea resolver. Por ejemplo: Suma - Resta - Multiplicacion - Division");
 
-if ((problema == "suma")||(problema == "Suma")){
+if ((problema == "suma")||(problema == "Suma")||(problema == "SUMA")){
     let num1=parseFloat (prompt("Ingrese el valor del primer numero a sumar"));
     let num2 = parseFloat (prompt("Ingrese el valor del segundo numero a sumar"));
-    let suma = num1 + num2;
-    alert(+num1+" + "+num2+" = "+suma);
-}else if ((problema == "resta")||(problema == "Resta")){
+    suma (num1, num2);
+}else if ((problema == "resta")||(problema == "Resta")||(problema == "RESTA")){
     let num1=parseFloat (prompt("Ingrese el valor del primer numero a restar"));
     let num2 = parseFloat (prompt("Ingrese el valor del segundo numero a restar"));
-    let resta = num1 - num2;
-    alert(+num1+" - "+num2+" = "+resta);
-}else if ((problema == "multiplicacion")||(problema == "Multiplicacion")){
+    resta (num1, num2);
+}else if ((problema == "multiplicacion")||(problema == "Multiplicacion")||(problema == "MULTIPLICACION")){
     let num1=parseFloat (prompt("Ingrese el valor del primer numero a multiplicar"));
     let num2 = parseFloat (prompt("Ingrese el valor del segundo numero a multiplicar"));
-    let multiplicar = num1 * num2;
-    alert(+num1+" x "+num2+" = "+multiplicar);
-}else if ((problema == "division")||(problema == "Division")){
+    multiplicacion (num1, num2);
+}else if ((problema == "division")||(problema == "Division")||(problema == "DIVISION")){
     let num1=parseFloat (prompt("Ingrese el valor del primer numero a dividir"));
     let num2 = parseFloat (prompt("Ingrese el valor del segundo numero a dividir"));
-    let division = num1 / num2;
-    alert(+num1+" / "+num2+" = "+division);
+    division (num1, num2);
 }else{
-    alert("ERROR: Ingresar bien el nombre de su operacion.")
+    alert("ERROR: Ingresar bien el nombre de su operacion. Sin ningun espacio o simbolo")
     let problema = prompt("Ingrese el problema matematico que desea resolver. Por ejemplo: Multiplicacion");
-    if ((problema == "suma")||(problema == "Suma")){
+    if ((problema == "suma")||(problema == "Suma")||(problema == "SUMA")){
         let num1=parseFloat (prompt("Ingrese el valor del primer numero a sumar"));
         let num2 = parseFloat (prompt("Ingrese el valor del segundo numero a sumar"));
-        let suma = num1 + num2;
-        alert(+num1+" + "+num2+" = "+suma);
-    }else if ((problema == "resta")||(problema == "Resta")){
+        suma (num1, num2);
+    }else if ((problema == "resta")||(problema == "Resta")||(problema == "RESTA")){
         let num1=parseFloat (prompt("Ingrese el valor del primer numero a restar"));
         let num2 = parseFloat (prompt("Ingrese el valor del segundo numero a restar"));
-        let resta = num1 - num2;
-        alert(+num1+" - "+num2+" = "+resta);
-    }else if ((problema == "multiplicacion")||(problema == "Multiplicacion")){
+        resta (num1, num2);
+    }else if ((problema == "multiplicacion")||(problema == "Multiplicacion")||(problema == "MULTIPLICACION")){
         let num1=parseFloat (prompt("Ingrese el valor del primer numero a multiplicar"));
         let num2 = parseFloat (prompt("Ingrese el valor del segundo numero a multiplicar"));
-        let multiplicar = num1 * num2;
-        alert(+num1+" x "+num2+" = "+multiplicar);
-    }else if ((problema == "division")||(problema == "Division")){
+        multiplicacion (num1, num2);
+    }else if ((problema == "division")||(problema == "Division")||(problema == "DIVISION")){
         let num1=parseFloat (prompt("Ingrese el valor del primer numero a dividir"));
         let num2 = parseFloat (prompt("Ingrese el valor del segundo numero a dividir"));
         let division = num1 / num2;
-        alert(+num1+" / "+num2+" = "+division);
+        division (num1, num2);
     }
 }
