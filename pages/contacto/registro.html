@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="/pages/contacto/js/script.js" async="true"></script>
+    <link rel="stylesheet" href="/pages/contacto/css/style.css">
+    <link rel="icon" href="/images/icono/icono.png">
+    <title>Calculadora General-registro</title>
+</head>
+<body>
+    <header>
+        Calculadora
+    </header>
+    <div class="encabezado">
+        <ul class="encabezado">
+            <li class="encabezado">
+                <a href="/index.html" style="text-decoration: none;">
+                    Calculadora Normal
+                </a>
+            </li>
+            <li class="encabezado">
+                <a href="/pages/supermercado/supermercado.html" style="text-decoration: none;">
+                    Calculadora de Supermercado
+                </a>
+            </li>
+            <li class="encabezado">
+                <a href="/pages/promedio/promedio.html" style="text-decoration: none;">
+                    Calculadora de Promedios
+                </a>
+            </li>
+            <li class="encabezado">
+                <a href="/pages/mru/mru.html" style="text-decoration: none;">
+                    MRU
+                </a>
+            </li>
+            <li class="encabezado">
+                <a href="/pages/metros-cuadrados/metros_cuadrados.html" style="text-decoration: none;">
+                    Metros Cuadrados
+                </a>
+            </li>
+            <li class="encabezado">
+                <a href="/pages/contacto/contacto.html" style="text-decoration: none;">
+                    Contacto
+                </a>
+            </li>
+        </ul>
+    </div>
+    <h1>
+        Crear una cuenta
+    </h1>
+    <form action="/action_page.php">
+        <div class="container_registro">
+            <p>
+                Por favor, rellene este formulario para crear una cuenta.
+            </p>
+            <hr>
+            <label for="email"><b>Nombres</b></label>
+            <input type="text" placeholder="Ingrese Sus Nombres" name="email" id="email" required>
+            <label for="email"><b>Apellidos</b></label>
+            <input type="text" placeholder="Ingrese Sus Apellidos" name="email" id="email" required>
+            <label for="country"><b>Provincia</b></label>
+            <select id="country" name="Provincia">
+                <option value="none">Elegir</option>
+                <option value="Buenos aires">Buenos Aires</option>
+                <option value="Catamarca">Catamarca</option>
+                <option value="Chaco">Chaco</option>
+                <option value="Chubut">Chubut</option>
+                <option value="Cordoba">Cordoba</option>
+                <option value="Corrientes">Corrientes</option>
+                <option value="Entre Rios">Entre Rios</option>
+                <option value="Formosa">Formosa</option>
+                <option value="Jujuy">Jujuy</option>
+                <option value="La Pampa">La Pampa</option>
+                <option value="La Rioja">La Rioja</option>
+                <option value="Mendoza">Mendoza</option>
+                <option value="Misiones">Misiones</option>
+                <option value="Neuquen">Neuquen</option>
+                <option value="Rio Negro">Rio Negro</option>
+                <option value="Salta">Salta</option>
+                <option value="San Juan">San Juan</option>
+                <option value="San Luis">San Luis</option>
+                <option value="Santa Cruz">Santa Cruz</option>
+                <option value="Santa Fe">Santa Fe</option>
+                <option value="Santiago del Estero">Santiago del Estero</option>
+                <option value="Tierra del Fuego">Tierra del Fuego</option>
+                <option value="Tucuman">Tucuman</option>
+            </select>
+            <br>
+            <br>
+            <label for="email"><b>Correo electrónico</b></label>
+            <input type="text" placeholder="Ingrese Correo electrónico" name="email" id="email" required>
+            <label for="psw"><b>Contraseña</b></label>
+            <input type="password" placeholder="Ingrese Contraseña" name="psw" id="psw" required>
+            <label for="psw-repeat"><b>Ingresar La Contraseña De Nuevo</b></label>
+            <input type="password" placeholder="Ingresar Contraseña" name="psw-repeat" id="psw-repeat" required>
+            <hr>
+            <p>Al crear una cuenta, usted acepta nuestros <a href="#">Terminos & Privacidad</a></p>
+            <button type="reset" class="registerbtn">Registrarse</button>
+        </div>
+    </form>
+</body>
+</html>
