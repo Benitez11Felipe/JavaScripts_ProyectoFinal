@@ -31,12 +31,12 @@ if ((problema == "espacio")||(problema == "Espacio")||(problema == "ESPACIO")){
 else if ((problema == "tiempo")||(problema == "Tiempo")|(problema == "TIEMPO")){
     let num1 = parseFloat (prompt("Ingrese la distancia en Km"));
     let num2 = parseFloat (prompt("Ingresar la velocidad en Km/h"));
-    tiempo (num1, num2, "tiempo");
+    calculo (num1, num2, "tiempo");
 }
 else if ((problema == "velocidad")||(problema == "Velocidad")||(problema == "VELOCIDAD")){
     let num1 = parseFloat (prompt("Ingrese la distancia en Km"));
     let num2 = parseFloat (prompt("Ingresar el tiempo en hs"));
-    velocidad (num1, num2, "velocidad");
+    calculo (num1, num2, "velocidad");
 }
 else{
     alert("ERROR: Ingresar bien el nombre de su operacion.")
@@ -49,11 +49,11 @@ else{
     else if ((problema == "tiempo")||(problema == "Tiempo")|(problema == "TIEMPO")){
         let num1 = parseFloat (prompt("Ingrese la distancia en Km"));
         let num2 = parseFloat (prompt("Ingresar la velocidad en Km/h"));
-        tiempo (num1, num2, "tiempo");
+        calculo (num1, num2, "tiempo");
     }
     else if ((problema == "velocidad")||(problema == "Velocidad")||(problema == "VELOCIDAD")){
         let num1 = parseFloat (prompt("Ingrese la distancia en Km"));
         let num2 = parseFloat (prompt("Ingresar el tiempo en hs"));
-        velocidad (num1, num2, "velocidad");
+        calculo (num1, num2, "velocidad");
     }
 }
