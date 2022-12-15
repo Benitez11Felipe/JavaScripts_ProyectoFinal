@@ -7,7 +7,7 @@ function calculo (num1, num2, operacion){
             alert("La distancia que recorrio o recorrerá es de "+resultadoMru+"Km o tambien "+distanciaEnMetros+"m");
             break;
         case "tiempo":
-            resultadoMru = num1 / num2;
+            resultadoMru = ((num1 / num2).toFixed(2));
             tiempoEnSegundos = resultadoMru * 3600;
             alert("El tiempo que tardo es de "+resultadoMru+"Hs o "+tiempoEnSegundos+"seg");
             break;
