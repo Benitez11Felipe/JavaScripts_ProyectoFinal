@@ -2,7 +2,7 @@ alert("¿Desea hacer una lista o un carrito donde pondra los precios de los prod
 
 let decision = parseInt (prompt ("Para hacer lista ingrese(1). Para ingresar solo los precios de los productos precione (2)"));
 
-if (decision = "1"){
+if (decision == "1"){
 
     const carrito = ['Productos:'];
 
@@ -16,7 +16,7 @@ if (decision = "1"){
     console.log(carrito.join("\n"))
     alert(carrito.join("\n"))
 
-}else if (decision = "2"){
+}else if (decision == "2"){
     let cantidadProductos = 0;
     let precioPagar = 0;
 
