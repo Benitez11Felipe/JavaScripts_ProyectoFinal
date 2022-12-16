@@ -22,7 +22,7 @@ function calculo (num1, num2, operacion){
     }
 }
 
-let problema = prompt("Ingrese el problema matematico que desea resolver. Por ejemplo: Suma - Resta - Multiplicacion - Division. \nIngresar (-1 para finalizar.");
+let problema = prompt("Ingrese el problema matematico que desea resolver. Por ejemplo: Suma - Resta - Multiplicacion - Division. \nIngresar (-1) para finalizar.");
 
 if ((problema == "suma")||(problema == "Suma")||(problema == "SUMA")){
     let num1=parseFloat (prompt("Ingrese el valor del primer numero a sumar"));
