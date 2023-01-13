@@ -52,7 +52,7 @@ header {
   background-color: rgb(31, 122, 140);
 }
 .encabezado ul li {
-  margin: 0vw 7.5vw 0vw 7.5vw;
+  margin: auto;
   cursor: pointer;
   text-align: center;
 }
