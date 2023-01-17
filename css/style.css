@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(217, 240, 255);
+}
+p {
+  text-align: center;
+  margin: auto;
+  padding: 2vw;
+}
+header {
+  background-color: rgba(131, 201, 244);
+  margin: 0%;
+  text-align: center;
+  padding: 5vw;
+  font-size: 4vw;
+}
+h2 {
+  text-align: center;
+  color: rgba(131, 201, 244);
+}
+.encabezado {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.encabezado button {
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+.encabezado:hover button span {
+  color: rgba(0, 0, 0, 0.553);
+}
+.encabezado button:hover span {
+  color: #000;
+  background-color:  rgba(0, 0, 0, 0.141);
+}
+.encabezado ul {
+  margin: 0%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 1.5%;
+  margin-top: 0.1%;
+  margin-bottom: 0.1%;
+  background-color: rgb(163, 213, 255);
+}
+.encabezado ul li {
+  margin: auto;
+  cursor: pointer;
+  text-align: center;
+}
+.encabezado ul li:hover:after {
+  transform: scaleX(1);
+}
+body::-webkit-scrollbar {
+  width: 1vw;
+}
+body::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(163, 213, 255);
+  border-radius: 20px;
+  border: 2px solid rgb(255, 255, 255);
+}
+
+#parrafoEliminado {
+  background-color: rgb(217, 240, 255);
+}
+
+.descripcion {
+  text-align: center;
+  margin: auto;
+  padding: 2vw;
+}
+
+.resultado {
+  margin: 0%;
+  font-size: 2vw;
+}
+
+.boton {
+  margin: 0vw 3vw 0vw 3vw;
+}
+
+input {
+  text-align: center;
+  margin: 1vw;
+  padding: 1vw;
+  font-size: 2vw;
+}
+
+.mru {
+  text-align: left;
+}
+
+#mruColor {
+  background-color: none;
+}
+
+#numeroFracciones1 {
+  margin-right: 19vw;
+}
+
+#numeroFracciones2 {
+  margin-left: 19vw;
+}
+
+#numeroFracciones3 {
+  margin-right: 19vw;
+}
+
+#numeroFracciones4 {
+  margin-left: 19vw;
+}
+
+#operacionFracciones {
+  margin-left: 6vw;
+  margin-right: 6vw;
+}
+
+.main{
+  margin: auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  width: 50%;
+  max-width: 1000px;
+  background-image: linear-gradient(to left, rgba(163, 213, 255, 0.472), rgba(217, 240, 255, 0.365));
+  overflow: hidden;
+  padding: .7em;
+  border-radius: 1em;
+  display: grid;
+  grid-auto-rows: max-content;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  gap: .6em;
+  animation: mostrar 1s ease-in-out;
+}
+
+@keyframes mostrar {
+  0%{
+      opacity: 0;
+  }
+
+  100%{
+      opacity: 1;
+  }
+}
+
+.main__contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5em;
+  padding: 3em .7em;
+  text-align: center;
+}
+
+.main__form{
+  display: grid;
+  justify-items: center;
+  gap: 1.5em;
+}
+
+.main__input{
+  width: 90%;
+  color: rgba(131, 201, 244);
+  outline: none;
+  border: none;
+  padding: 1em;
+  font: inherit;
+  border-radius: .6em;
+}
+
+.main__input--send{
+  background-color: rgba(131, 201, 244);
+  color: white;
+  font-weight: 600;
+}
+
+.main__title{
+  font-size: 2.3rem;
+}
+
+.main__paragraph{
+  margin: .3em 0;
+}
+
+.main__social{
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  grid-auto-columns: max-content;
+  gap: 1em;
+}
+
+.main__link{
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: .6em 1.5em;
+}
+
+.main__link:hover{
+  background-color: #fff;
+}
+
+input[type="button"]{
+  background-color: white;
+}
+input[type="reset"]{
+  background-color: white;
+}
