@@ -203,12 +203,12 @@ select {
 @media only screen and (max-width: 1080px) {
 
   input {
-    width: 50vw;
+    width: 75vw;
     font-size: 5vw;
   }
 
   select {
-    width: 40vw;
+    width: 60vw;
     font-size: 4vw;
   }
 
