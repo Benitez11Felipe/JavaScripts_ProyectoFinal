@@ -203,8 +203,8 @@ select {
 @media only screen and (max-width: 1080px) {
   
   header {
-    padding-bottom: 5vh;
-    padding-top: 5vh;
+    padding-bottom: 2.5vh;
+    padding-top: 2.5vh;
     font-size: 7.5vw;
   }
 
