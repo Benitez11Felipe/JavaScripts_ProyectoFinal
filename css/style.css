@@ -267,7 +267,7 @@ select {
 
   .swal2-container.swal2-center>.swal2-popup {
     width: 95vw;
-    height: 40vh;
+    height: 45vh;
     align-self: center;
     justify-self: center;
   }
@@ -286,7 +286,7 @@ select {
 
   .swal2-input {
     height: 10vh;
-    font-size: 95%;
+    font-size: 100%;
   }
 
   .swal2-styled.swal2-confirm {
