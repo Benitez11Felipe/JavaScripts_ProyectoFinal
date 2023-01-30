@@ -201,6 +201,11 @@ select {
 }
 
 @media only screen and (max-width: 1080px) {
+  
+  header {
+    padding: 5vh;
+    font-size: 10vw;
+  }
 
   input {
     width: 75vw;
