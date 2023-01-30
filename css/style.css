@@ -209,12 +209,12 @@ select {
   }
 
   input {
-    width: 50vw;
-    font-size: 10vw;
+    width: 75vw;
+    font-size: 7.5vw;
   }
 
   select {
-    width: 55vw;
+    width: 75vw;
     font-size: 7.5vw;
   }
 
@@ -247,12 +247,12 @@ select {
   }
 
   #botonCalcular {
-    width: 50vw;
+    width: 45vw;
     font-size: 6vw;
   }
   
   #botonBorrar {
-    width: 50vw;
+    width: 45vw;
     font-size: 6vw;
   }
 
