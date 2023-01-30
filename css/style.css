@@ -225,6 +225,11 @@ select {
   .resultado {
     font-size: 7.5vw;
   }
+  
+  #resultadoDos {
+    margin: 0%;
+    font-size: 3vw;
+  }
 
   #numeroFracciones1 {
     margin-right: 10vw;
