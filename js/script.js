@@ -352,6 +352,9 @@ mru.onclick = () => {
     divFracciones.remove();
     divMetrosCuadrados.remove();
     divImc.remove();
+    divMruEspacio.remove();
+    divMruTiempo.remove();
+    divMruVelocidad.remove();
 
     document.body.appendChild(divMru);
     divMru.innerHTML = '<form id="mru"><p>Seleccionar la operacion que usted desea resolver</p><input class="tresPrincipales" type="button" id="botonVelocidad" value="Velocidad"></input><input class="tresPrincipales" type="button" id="botonEspacio" value="Espacio"></input><input class="tresPrincipales" type="button" id="botonTiempo" value="Tiempo"></input></form>'
