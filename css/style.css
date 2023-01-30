@@ -267,7 +267,7 @@ select {
 
   .swal2-container.swal2-center>.swal2-popup {
     width: 95vw;
-    height: 60vh;
+    height: 50vh;
     align-self: center;
     justify-self: center;
   }
