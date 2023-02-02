@@ -244,7 +244,7 @@ mru.onclick = () => {
     divMruTiempo.remove();
     divMruVelocidad.remove();
     document.body.appendChild(divMru);
-    divMru.innerHTML = '<form id="mru"><p>Seleccionar la operacion que usted desea resolver</p><input class="tresPrincipales" type="button" id="botonVelocidad" value="Velocidad"></input><input class="tresPrincipales" type="button" id="botonEspacio" value="Espacio"></input><input class="tresPrincipales" type="button" id="botonTiempo" value="Tiempo"></input></form>'
+    divMru.innerHTML = '<form id="mru"><p>Seleccionar la operacion que usted desea resolver. Debe de completar TODOS los campos requeridos.</p><input class="tresPrincipales" type="button" id="botonVelocidad" value="Velocidad"></input><input class="tresPrincipales" type="button" id="botonEspacio" value="Espacio"></input><input class="tresPrincipales" type="button" id="botonTiempo" value="Tiempo"></input></form>'
     const velocidad = document.getElementById('botonVelocidad'),
     espacio = document.getElementById('botonEspacio'),
     tiempo = document.getElementById('botonTiempo');
@@ -335,7 +335,7 @@ metrosCuadrados.onclick = () => {
     divImc.remove();
     if (JSON.parse(localStorage.getItem('OperacionMetrosCuadrados')) == null){
         document.body.appendChild(divMetrosCuadrados);
-        divMetrosCuadrados.innerHTML = '<form><p>Ingresar el Largo en metros: <br><input type="number" id="numero2">m <br>Ingresar el Ancho en metros: <br><input type="number" id="numero1">m</p><p class="resultado" id="resultado">Su resultado es =</p><p><input type="button" value="calcular" id="botonCalcular"/><input type="reset" value="borrar" id="botonBorrar"/></p></form>'
+        divMetrosCuadrados.innerHTML = '<form><p>Debe de rellenar todos los campos requeridos</p><p>Ingresar el Largo en metros: <br><input type="number" id="numero2">m <br>Ingresar el Ancho en metros: <br><input type="number" id="numero1">m</p><p class="resultado" id="resultado">Su resultado es =</p><p><input type="button" value="calcular" id="botonCalcular"/><input type="reset" value="borrar" id="botonBorrar"/></p></form>'
         const numero1 = document.getElementById("numero1"),
         numero2 = document.getElementById("numero2"),
         calcular = document.getElementById("botonCalcular"),
@@ -392,7 +392,7 @@ imc.onclick = () => {
     divNormal.remove();
     if (JSON.parse(localStorage.getItem('OperacionImc')) == null){
         document.body.appendChild(divImc);
-        divImc.innerHTML = '<h1>Indice de Masa Corporal</h1><form><p>Ingresar su peso corporal en kilogramos: <br><input type="number" id="numero2">kg<br>Ingresar su altura en metros: <br><input type="number" id="numero1">m</p><p class="resultado" id="resultado">Su IMC es de =</p><p><input type="button" value="calcular" id="botonCalcular"/><input type="reset" value="borrar" id="botonBorrar"/></p></form>'
+        divImc.innerHTML = '<h1>Indice de Masa Corporal</h1><form><p>Debe de rellenar todos los campos requeridos</p><p>Ingresar su peso corporal en kilogramos: <br><input type="number" id="numero2">kg<br>Ingresar su altura en metros: <br><input type="number" id="numero1">m</p><p class="resultado" id="resultado">Su IMC es de =</p><p><input type="button" value="calcular" id="botonCalcular"/><input type="reset" value="borrar" id="botonBorrar"/></p></form>'
         const numero1 = document.getElementById("numero1"),
         numero2 = document.getElementById("numero2"),
         calcular = document.getElementById("botonCalcular"),
