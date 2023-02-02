@@ -47,17 +47,22 @@ normal.onclick = () => {
         function funciónAlPresionarElBoton() {
             lectura_de_numero1 = parseFloat(numero1.value);
             lectura_de_numero2 = parseFloat(numero2.value);
-            if (operacion.value == "+") {
+            if((lectura_de_numero1 = NaN)||(lectura_de_numero2 = NaN)){
+                break;
+            }else{
+                if (operacion.value == "+") {
                 resultado.innerHTML = lectura_de_numero1+" + "+lectura_de_numero2+" = "+(lectura_de_numero1 + lectura_de_numero2);
+                }
+                else if (operacion.value == "-") {
+                    resultado.innerHTML = lectura_de_numero1+" - "+lectura_de_numero2+" = "+(lectura_de_numero1 - lectura_de_numero2);
+                }
+                else if (operacion.value == "x"){
+                    resultado.innerHTML = lectura_de_numero1+" x "+lectura_de_numero2+" = "+(lectura_de_numero1 * lectura_de_numero2);
+                }else if (operacion.value == "/") {
+                    resultado.innerHTML = lectura_de_numero1+" / "+lectura_de_numero2+" = "+(lectura_de_numero1 / lectura_de_numero2);
+                }
             }
-            else if (operacion.value == "-") {
-                resultado.innerHTML = lectura_de_numero1+" - "+lectura_de_numero2+" = "+(lectura_de_numero1 - lectura_de_numero2);
-            }
-            else if (operacion.value == "x"){
-                resultado.innerHTML = lectura_de_numero1+" x "+lectura_de_numero2+" = "+(lectura_de_numero1 * lectura_de_numero2);
-            }else if (operacion.value == "/") {
-                resultado.innerHTML = lectura_de_numero1+" / "+lectura_de_numero2+" = "+(lectura_de_numero1 / lectura_de_numero2);
-            }
+            
             localStorage.setItem('OperacionNormal', JSON.stringify(resultado.innerHTML));
         }
     }else{
