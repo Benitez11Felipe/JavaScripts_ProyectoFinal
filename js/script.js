@@ -48,7 +48,7 @@ normal.onclick = () => {
             lectura_de_numero1 = parseFloat(numero1.value);
             lectura_de_numero2 = parseFloat(numero2.value);
             if((lectura_de_numero1 = NaN)||(lectura_de_numero2 = NaN)){
-                break;
+                alert("Falta un valor a ingresar")
             }else{
                 if (operacion.value == "+") {
                 resultado.innerHTML = lectura_de_numero1+" + "+lectura_de_numero2+" = "+(lectura_de_numero1 + lectura_de_numero2);
