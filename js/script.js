@@ -37,7 +37,7 @@ normal.onclick = () => {
     divImc.remove();
     if (JSON.parse(localStorage.getItem('OperacionNormal')) == null){
         document.body.appendChild(divNormal);
-        divNormal.innerHTML = '<form><p class="descripcion">Para poder realizar su operacion matematica debera ingresar en el segundo cuadro (El cuadro del medio) el signo del problema matematico que usted desea realizar</p><p><input type="number"  id="numero1"/><select id="operacion"><option value="none">operacion</option><option value="+">+</option><option value="-">-</option><option value="x">x</option><option value="/">÷</option></select><input type="number"  id="numero2"/></p><p class="resultado" id="resultado">Su resultado es: </p><p><input type="button" value="calcular" id="botonCalcular"/><input type="reset" value="borrar" id="botonBorrar"/></p></form>'
+        divNormal.innerHTML = '<form><p class="descripcion">Para poder realizar su operacion matematica debera ingresar en los cuadros de los costados su 1er y 2do valor, y en el cuadro del medio el signo del problema matematico que usted desea realizar</p><p><input type="number"  id="numero1"/><select id="operacion"><option value="none">operacion</option><option value="+">+</option><option value="-">-</option><option value="x">x</option><option value="/">÷</option></select><input type="number"  id="numero2"/></p><p class="resultado" id="resultado">Su resultado es: </p><p><input type="button" value="calcular" id="botonCalcular"/><input type="reset" value="borrar" id="botonBorrar"/></p></form>'
         const numero1 = document.getElementById("numero1"),
         operacion = document.getElementById("operacion"),
         numero2 = document.getElementById("numero2"),
