@@ -47,26 +47,22 @@ normal.onclick = () => {
         function funciónAlPresionarElBoton() {
             lectura_de_numero1 = parseFloat(numero1.value);
             lectura_de_numero2 = parseFloat(numero2.value);
-            if((lectura_de_numero1 == NaN)||(lectura_de_numero2 == NaN)){
-                alert("Falta un valor a ingresar")
-            }else{
-                if (operacion.value == "+") {
-                resultado.innerHTML = lectura_de_numero1+" + "+lectura_de_numero2+" = "+(lectura_de_numero1 + lectura_de_numero2);
-                }
-                else if (operacion.value == "-") {
-                    resultado.innerHTML = lectura_de_numero1+" - "+lectura_de_numero2+" = "+(lectura_de_numero1 - lectura_de_numero2);
-                }
-                else if (operacion.value == "x"){
-                    resultado.innerHTML = lectura_de_numero1+" x "+lectura_de_numero2+" = "+(lectura_de_numero1 * lectura_de_numero2);
-                }else if (operacion.value == "/") {
-                    resultado.innerHTML = lectura_de_numero1+" / "+lectura_de_numero2+" = "+(lectura_de_numero1 / lectura_de_numero2);
-                }
+            if (operacion.value == "+") {
+            resultado.innerHTML = lectura_de_numero1+" + "+lectura_de_numero2+" = "+(lectura_de_numero1 + lectura_de_numero2);
+            }
+            else if (operacion.value == "-") {
+                resultado.innerHTML = lectura_de_numero1+" - "+lectura_de_numero2+" = "+(lectura_de_numero1 - lectura_de_numero2);
+            }
+            else if (operacion.value == "x"){
+                resultado.innerHTML = lectura_de_numero1+" x "+lectura_de_numero2+" = "+(lectura_de_numero1 * lectura_de_numero2);
+            }else if (operacion.value == "/") {
+                resultado.innerHTML = lectura_de_numero1+" / "+lectura_de_numero2+" = "+(lectura_de_numero1 / lectura_de_numero2);
             }
             localStorage.setItem('OperacionNormal', JSON.stringify(resultado.innerHTML));
         }
     }else{
         document.body.appendChild(divNormal);
-        divNormal.innerHTML = '<form><p class="descripcion">Para poder realizar su operacion matematica debera ingresar en el segundo cuadro (El cuadro del medio) el signo del problema matematico que usted desea realizar</p><p><input type="number"  id="numero1"/><select id="operacion"><option value="none">operacion</option><option value="+">+</option><option value="-">-</option><option value="x">x</option><option value="/">÷</option></select><input type="number"  id="numero2"/></p><p class="resultado" id="resultado">Su resultado es: </p><p id="resultadoDos">El resultado de su ultima operacion fue:<br>'+JSON.parse(localStorage.getItem('OperacionNormal'))+'</p><p><input type="button" value="calcular" id="botonCalcular"/><input type="reset" value="borrar" id="botonBorrar"/></p></form>'
+        divNormal.innerHTML = '<form><p class="descripcion">Para poder realizar su operacion matematica debera ingresar en los cuadros de los costados su 1er y 2do valor, y en el cuadro del medio el signo del problema matematico que usted desea realizar</p><p><input type="number"  id="numero1"/><select id="operacion"><option value="none">operacion</option><option value="+">+</option><option value="-">-</option><option value="x">x</option><option value="/">÷</option></select><input type="number"  id="numero2"/></p><p class="resultado" id="resultado">Su resultado es: </p><p id="resultadoDos">El resultado de su ultima operacion fue:<br>'+JSON.parse(localStorage.getItem('OperacionNormal'))+'</p><p><input type="button" value="calcular" id="botonCalcular"/><input type="reset" value="borrar" id="botonBorrar"/></p></form>'
         const numero1 = document.getElementById("numero1"),
         operacion = document.getElementById("operacion"),
         numero2 = document.getElementById("numero2"),
@@ -76,20 +72,16 @@ normal.onclick = () => {
         function funciónAlPresionarElBoton() {
             lectura_de_numero1 = parseFloat(numero1.value);
             lectura_de_numero2 = parseFloat(numero2.value);
-            if((lectura_de_numero1 == NaN)||(lectura_de_numero2 == NaN)){
-                alert("Falta un valor a ingresar")
-            }else{
-                if (operacion.value == "+") {
-                    resultado.innerHTML = lectura_de_numero1+" + "+lectura_de_numero2+" = "+(lectura_de_numero1 + lectura_de_numero2);
-                }
-                else if (operacion.value == "-") {
-                    resultado.innerHTML = lectura_de_numero1+" - "+lectura_de_numero2+" = "+(lectura_de_numero1 - lectura_de_numero2);
-                }
-                else if (operacion.value == "x"){
-                    resultado.innerHTML = lectura_de_numero1+" x "+lectura_de_numero2+" = "+(lectura_de_numero1 * lectura_de_numero2);
-                }else if (operacion.value == "/") {
-                    resultado.innerHTML = lectura_de_numero1+" / "+lectura_de_numero2+" = "+(lectura_de_numero1 / lectura_de_numero2);
-                }
+            if (operacion.value == "+") {
+                resultado.innerHTML = lectura_de_numero1+" + "+lectura_de_numero2+" = "+(lectura_de_numero1 + lectura_de_numero2);
+            }
+            else if (operacion.value == "-") {
+                resultado.innerHTML = lectura_de_numero1+" - "+lectura_de_numero2+" = "+(lectura_de_numero1 - lectura_de_numero2);
+            }
+            else if (operacion.value == "x"){
+                resultado.innerHTML = lectura_de_numero1+" x "+lectura_de_numero2+" = "+(lectura_de_numero1 * lectura_de_numero2);
+            }else if (operacion.value == "/") {
+                resultado.innerHTML = lectura_de_numero1+" / "+lectura_de_numero2+" = "+(lectura_de_numero1 / lectura_de_numero2);
             }
             localStorage.setItem('OperacionNormal', JSON.stringify(resultado.innerHTML));
         }
