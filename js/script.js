@@ -358,7 +358,7 @@ metrosCuadrados.onclick = () => {
         }
     }else{
         document.body.appendChild(divMetrosCuadrados);
-        divMetrosCuadrados.innerHTML = '<form><p>Ingresar el Largo en metros: <br><input type="number" id="numero2">m <br>Ingresar el Ancho en metros: <br><input type="number" id="numero1">m</p><p class="resultado" id="resultado">Su resultado es =</p><p id="resultadoDos">El resultado de su ultima operacion fue: <br>'+JSON.parse(localStorage.getItem('OperacionMetrosCuadrados'))+'</p><p><input type="button" value="calcular" id="botonCalcular"/><input type="reset" value="borrar" id="botonBorrar"/></p></form>'
+        divMetrosCuadrados.innerHTML = '<form><p>Debe de rellenar todos los campos requeridos</p><p>Ingresar el Largo en metros: <br><input type="number" id="numero2">m <br>Ingresar el Ancho en metros: <br><input type="number" id="numero1">m</p><p class="resultado" id="resultado">Su resultado es =</p><p id="resultadoDos">El resultado de su ultima operacion fue: <br>'+JSON.parse(localStorage.getItem('OperacionMetrosCuadrados'))+'</p><p><input type="button" value="calcular" id="botonCalcular"/><input type="reset" value="borrar" id="botonBorrar"/></p></form>'
         const largo = document.getElementById("numero1"),
         ancho = document.getElementById("numero2"),
         calcular = document.getElementById("botonCalcular"),
@@ -416,7 +416,7 @@ imc.onclick = () => {
         }
     }else{
         document.body.appendChild(divImc);
-        divImc.innerHTML = '<h1>Indice de Masa Corporal</h1><form><p>Ingresar su peso corporal en kilogramos: <br><input type="number" id="numero2">kg<br>Ingresar su altura en metros: <br><input type="number" id="numero1">m</p><p class="resultado" id="resultado">Su IMC es de =</p><p id="resultadoDos">El resultado de su ultimo IMC fue de:<br>'+JSON.parse(localStorage.getItem('OperacionImc'))+'</p><p><input type="button" value="calcular" id="botonCalcular"/><input type="reset" value="borrar" id="botonBorrar"/></p></form>'
+        divImc.innerHTML = '<h1>Indice de Masa Corporal</h1><form><p>Debe de rellenar todos los campos requeridos</p><p>Ingresar su peso corporal en kilogramos: <br><input type="number" id="numero2">kg<br>Ingresar su altura en metros: <br><input type="number" id="numero1">m</p><p class="resultado" id="resultado">Su IMC es de =</p><p id="resultadoDos">El resultado de su ultimo IMC fue de:<br>'+JSON.parse(localStorage.getItem('OperacionImc'))+'</p><p><input type="button" value="calcular" id="botonCalcular"/><input type="reset" value="borrar" id="botonBorrar"/></p></form>'
         const numero1 = document.getElementById("numero1"),
         numero2 = document.getElementById("numero2"),
         calcular = document.getElementById("botonCalcular"),
